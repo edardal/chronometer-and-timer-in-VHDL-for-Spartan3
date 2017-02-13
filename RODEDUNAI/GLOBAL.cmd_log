@@ -1,0 +1,302 @@
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim GLOBAL.ngc GLOBAL_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/asus1/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/asus1/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/asus1/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/asus1/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/asus1/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/asus1/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/asus1/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/asus1/Desktop/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/asus1/Desktop/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/asus1/Desktop/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Rodri/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Rodri/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/sed/Desktop/Final/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/asus1/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.xst" -ofn "C:/Users/asus1/Desktop/RODEDUNAI_copia_PRUEBAS/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/GLOBAL.syr" 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 
+xst -intstyle ise -ifn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/GLOBAL.xst" -ofn "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/GLOBAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GLOBAL.ucf -p xc3s200-ft256-4 GLOBAL.ngc GLOBAL.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o GLOBAL_map.ncd GLOBAL.ngd GLOBAL.pcf 
+par -w -intstyle ise -ol high -t 1 GLOBAL_map.ncd GLOBAL.ncd GLOBAL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GLOBAL.twx GLOBAL.ncd -o GLOBAL.twr GLOBAL.pcf -ucf GLOBAL.ucf 
+bitgen -intstyle ise -f GLOBAL.ut GLOBAL.ncd 

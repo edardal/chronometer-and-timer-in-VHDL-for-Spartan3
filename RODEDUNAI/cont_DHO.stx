@@ -1,0 +1,51 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.52 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.52 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" in Library work.
+Entity <cuenta_DHO> compiled.
+ERROR:HDLParsers:808 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 76. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 82. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 82. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 88. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 88. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 88. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 95. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 95. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 95. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 95. = can not have such operands in this context.
+ERROR:HDLParsers:800 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 115. Type of num2 is incompatible with type of max.
+ERROR:HDLParsers:800 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 120. Type of num1 is incompatible with type of max.
+ERROR:HDLParsers:800 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 127. Type of num3 is incompatible with type of max.
+ERROR:HDLParsers:800 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 132. Type of num4 is incompatible with type of max.
+ERROR:HDLParsers:800 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 133. Type of num3 is incompatible with type of max.
+ERROR:HDLParsers:800 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 134. Type of num2 is incompatible with type of max.
+ERROR:HDLParsers:800 - "C:/Users/Usuario/Desktop/proyectoSED/RODEDUNAI/cont_DHO.vhd" Line 135. Type of num1 is incompatible with type of max.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.99 secs
+ 
+--> 
+
+Total memory usage is 261712 kilobytes
+
+Number of errors   :   17 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

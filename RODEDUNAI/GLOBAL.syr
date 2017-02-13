@@ -1,0 +1,963 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: GLOBAL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GLOBAL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GLOBAL"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : GLOBAL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/clk200Hz.vhd" in Library work.
+Architecture behavioral of Entity clk200hz is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/multiplexor.vhd" in Library work.
+Architecture behavioral of Entity multiplexor is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/decoder.vhd" in Library work.
+Architecture behavioral of Entity decoder7seg is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/cronometro.vhd" in Library work.
+Entity <cronometro> compiled.
+Entity <cronometro> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/cont_DHO.vhd" in Library work.
+Architecture behavioral of Entity cuenta_dho is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/cuenta_bin.vhd" in Library work.
+Architecture behavioral of Entity cuenta_bin is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/divisor_frec.vhd" in Library work.
+Architecture behavioral of Entity divisor_frec is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/visualizador.vhd" in Library work.
+Architecture behavioral of Entity visualizador is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/up_down.vhd" in Library work.
+Architecture behavioral of Entity up_down is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/salida.vhd" in Library work.
+Architecture behavioral of Entity salida_display is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/reinicio.vhd" in Library work.
+Architecture behavioral of Entity reinicio is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/sincronizador.vhd" in Library work.
+Architecture behavioral of Entity sincronizador is up to date.
+Compiling vhdl file "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/GLOBAL.vhd" in Library work.
+Architecture behavioral of Entity global is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <GLOBAL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <cronometro> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <cuenta_DHO> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <cuenta_bin> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <divisor_frec> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <visualizador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <up_down> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <salida_display> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reinicio> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <sincronizador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clk200Hz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <multiplexor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <decoder7seg> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <GLOBAL> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/GLOBAL.vhd" line 294: Unconnected output port 'Q' of component 'cuenta_bin'.
+WARNING:Xst:753 - "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/GLOBAL.vhd" line 355: Unconnected output port 'estado' of component 'up_down'.
+Entity <GLOBAL> analyzed. Unit <GLOBAL> generated.
+
+Analyzing Entity <cronometro> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/cronometro.vhd" line 56: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reinicio>
+Entity <cronometro> analyzed. Unit <cronometro> generated.
+
+Analyzing Entity <cuenta_DHO> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/cont_DHO.vhd" line 55: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reinicio>
+Entity <cuenta_DHO> analyzed. Unit <cuenta_DHO> generated.
+
+Analyzing Entity <cuenta_bin> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/cuenta_bin.vhd" line 56: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reinicio>
+Entity <cuenta_bin> analyzed. Unit <cuenta_bin> generated.
+
+Analyzing Entity <divisor_frec> in library <work> (Architecture <behavioral>).
+Entity <divisor_frec> analyzed. Unit <divisor_frec> generated.
+
+Analyzing Entity <visualizador> in library <work> (Architecture <behavioral>).
+WARNING:Xst:752 - "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/visualizador.vhd" line 87: Unconnected input port 'clk' of component 'decoder7seg' is tied to default value.
+WARNING:Xst:752 - "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/visualizador.vhd" line 87: Unconnected input port 'reset' of component 'decoder7seg' is tied to default value.
+Entity <visualizador> analyzed. Unit <visualizador> generated.
+
+Analyzing Entity <clk200Hz> in library <work> (Architecture <behavioral>).
+Entity <clk200Hz> analyzed. Unit <clk200Hz> generated.
+
+Analyzing Entity <multiplexor> in library <work> (Architecture <behavioral>).
+Entity <multiplexor> analyzed. Unit <multiplexor> generated.
+
+Analyzing Entity <decoder7seg> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/decoder.vhd" line 70: Mux is complete : default of case is discarded
+Entity <decoder7seg> analyzed. Unit <decoder7seg> generated.
+
+Analyzing Entity <up_down> in library <work> (Architecture <behavioral>).
+Entity <up_down> analyzed. Unit <up_down> generated.
+
+Analyzing Entity <salida_display> in library <work> (Architecture <behavioral>).
+Entity <salida_display> analyzed. Unit <salida_display> generated.
+
+Analyzing Entity <reinicio> in library <work> (Architecture <behavioral>).
+Entity <reinicio> analyzed. Unit <reinicio> generated.
+
+Analyzing Entity <sincronizador> in library <work> (Architecture <behavioral>).
+Entity <sincronizador> analyzed. Unit <sincronizador> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <cronometro>.
+    Related source file is "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/cronometro.vhd".
+    Found 1-bit register for signal <FINAL>.
+    Found 4-bit register for signal <Segundo0>.
+    Found 4-bit register for signal <Segundo1>.
+    Found 4-bit register for signal <Minuto0>.
+    Found 4-bit register for signal <Minuto1>.
+    Found 4-bit register for signal <minutero0>.
+    Found 4-bit addsub for signal <minutero0$share0000> created at line 88.
+    Found 4-bit register for signal <minutero1>.
+    Found 4-bit addsub for signal <minutero1$share0000> created at line 88.
+    Found 4-bit register for signal <segundero0>.
+    Found 4-bit addsub for signal <segundero0$share0000> created at line 88.
+    Found 4-bit register for signal <segundero1>.
+    Found 4-bit addsub for signal <segundero1$share0000> created at line 88.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+Unit <cronometro> synthesized.
+
+
+Synthesizing Unit <cuenta_DHO>.
+    Related source file is "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/cont_DHO.vhd".
+    Found 1-bit register for signal <FINAL>.
+    Found 4-bit register for signal <DIGITO1>.
+    Found 4-bit register for signal <DIGITO2>.
+    Found 4-bit register for signal <DIGITO3>.
+    Found 4-bit register for signal <DIGITO4>.
+    Found 4-bit comparator equal for signal <fin$cmp_eq0000> created at line 108.
+    Found 4-bit comparator equal for signal <fin$cmp_eq0001> created at line 111.
+    Found 4-bit comparator equal for signal <fin$cmp_eq0002> created at line 115.
+    Found 4-bit comparator equal for signal <fin$cmp_eq0003> created at line 118.
+    Found 4-bit register for signal <maximo>.
+    Found 4-bit register for signal <num1>.
+    Found 4-bit adder for signal <num1$addsub0000> created at line 127.
+    Found 4-bit subtractor for signal <num1$sub0000> created at line 296.
+    Found 4-bit register for signal <num2>.
+    Found 4-bit subtractor for signal <num2$addsub0000> created at line 307.
+    Found 4-bit adder for signal <num2$addsub0001> created at line 138.
+    Found 4-bit register for signal <num3>.
+    Found 4-bit addsub for signal <num3$share0000> created at line 101.
+    Found 4-bit register for signal <num4>.
+    Found 4-bit addsub for signal <num4$share0000> created at line 101.
+    Summary:
+	inferred  37 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <cuenta_DHO> synthesized.
+
+
+Synthesizing Unit <cuenta_bin>.
+    Related source file is "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/cuenta_bin.vhd".
+    Found 1-bit register for signal <led_parpadeante>.
+    Found 4-bit register for signal <Q0>.
+    Found 4-bit register for signal <Q1>.
+    Found 4-bit register for signal <Q2>.
+    Found 4-bit register for signal <Q3>.
+    Found 4-bit register for signal <Q>.
+    Found 1-bit register for signal <led>.
+    Found 4-bit register for signal <q0_i>.
+    Found 4-bit register for signal <q1_i>.
+    Found 4-bit register for signal <q2_i>.
+    Found 4-bit register for signal <q3_i>.
+    Found 4-bit register for signal <vector>.
+    Found 4-bit adder for signal <vector$add0001> created at line 100.
+    Found 4-bit subtractor for signal <vector$sub0001> created at line 114.
+    Summary:
+	inferred  42 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <cuenta_bin> synthesized.
+
+
+Synthesizing Unit <divisor_frec>.
+    Related source file is "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/divisor_frec.vhd".
+    Found 25-bit up counter for signal <contador>.
+    Found 1-bit register for signal <temporal>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <divisor_frec> synthesized.
+
+
+Synthesizing Unit <up_down>.
+    Related source file is "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/up_down.vhd".
+    Found finite state machine <FSM_0> for signal <señal>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 7                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | Select4                   (negative)           |
+    | Reset              | clr_n                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit register for signal <estado>.
+    Found 4-bit register for signal <digito1>.
+    Found 4-bit register for signal <digito2>.
+    Found 4-bit register for signal <digito3>.
+    Found 4-bit register for signal <digito4>.
+    Found 4-bit register for signal <max1>.
+    Found 4-bit register for signal <max2>.
+    Found 4-bit register for signal <num1>.
+    Found 4-bit subtractor for signal <num1$addsub0000> created at line 108.
+    Found 4-bit adder for signal <num1$addsub0001> created at line 105.
+    Found 4-bit comparator greater for signal <num1$cmp_gt0000> created at line 107.
+    Found 4-bit comparator less for signal <num1$cmp_lt0000> created at line 104.
+    Found 4-bit register for signal <num2>.
+    Found 4-bit subtractor for signal <num2$addsub0000> created at line 119.
+    Found 4-bit adder for signal <num2$addsub0001> created at line 116.
+    Found 4-bit comparator greater for signal <num2$cmp_gt0000> created at line 118.
+    Found 4-bit comparator less for signal <num2$cmp_lt0000> created at line 115.
+    Found 4-bit register for signal <num3>.
+    Found 4-bit subtractor for signal <num3$addsub0000> created at line 130.
+    Found 4-bit adder for signal <num3$addsub0001> created at line 127.
+    Found 4-bit comparator greater for signal <num3$cmp_gt0000> created at line 129.
+    Found 4-bit comparator less for signal <num3$cmp_lt0000> created at line 126.
+    Found 4-bit register for signal <num4>.
+    Found 4-bit subtractor for signal <num4$addsub0000> created at line 142.
+    Found 4-bit adder for signal <num4$addsub0001> created at line 139.
+    Found 4-bit comparator greater for signal <num4$cmp_gt0000> created at line 141.
+    Found 4-bit comparator less for signal <num4$cmp_lt0000> created at line 138.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  44 D-type flip-flop(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+Unit <up_down> synthesized.
+
+
+Synthesizing Unit <salida_display>.
+    Related source file is "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/salida.vhd".
+    Found 8-bit register for signal <Salida>.
+    Found 4-bit register for signal <Mux>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+Unit <salida_display> synthesized.
+
+
+Synthesizing Unit <reinicio>.
+    Related source file is "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/reinicio.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <seleccion3ant>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seleccion2ant>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seleccion1ant>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit xor2 for signal <Salida_reinicio$xor0000> created at line 49.
+    Found 1-bit xor2 for signal <Salida_reinicio$xor0001> created at line 49.
+    Found 1-bit xor2 for signal <Salida_reinicio$xor0002> created at line 49.
+Unit <reinicio> synthesized.
+
+
+Synthesizing Unit <sincronizador>.
+    Related source file is "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/sincronizador.vhd".
+    Found 1-bit register for signal <salida>.
+    Found 1-bit register for signal <aux>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <sincronizador> synthesized.
+
+
+Synthesizing Unit <clk200Hz>.
+    Related source file is "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/clk200Hz.vhd".
+    Found 17-bit up counter for signal <contador>.
+    Found 1-bit register for signal <temporal>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clk200Hz> synthesized.
+
+
+Synthesizing Unit <multiplexor>.
+    Related source file is "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/multiplexor.vhd".
+    Found finite state machine <FSM_1> for signal <estado>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit register for signal <salida>.
+    Found 4-bit register for signal <MUX>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   8 D-type flip-flop(s).
+Unit <multiplexor> synthesized.
+
+
+Synthesizing Unit <decoder7seg>.
+    Related source file is "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/decoder.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x8-bit ROM for signal <salida>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <decoder7seg> synthesized.
+
+
+Synthesizing Unit <visualizador>.
+    Related source file is "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/visualizador.vhd".
+Unit <visualizador> synthesized.
+
+
+Synthesizing Unit <GLOBAL>.
+    Related source file is "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/GLOBAL.vhd".
+WARNING:Xst:1780 - Signal <clk100Hz> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <GLOBAL> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 16x8-bit ROM                                          : 3
+# Adders/Subtractors                                   : 20
+ 4-bit adder                                           : 7
+ 4-bit addsub                                          : 6
+ 4-bit subtractor                                      : 7
+# Counters                                             : 4
+ 17-bit up counter                                     : 3
+ 25-bit up counter                                     : 1
+# Registers                                            : 78
+ 1-bit register                                        : 32
+ 4-bit register                                        : 45
+ 8-bit register                                        : 1
+# Latches                                              : 3
+ 1-bit latch                                           : 3
+# Comparators                                          : 12
+ 4-bit comparator equal                                : 4
+ 4-bit comparator greater                              : 4
+ 4-bit comparator less                                 : 4
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <id5crono/mux_i/estado/FSM> on signal <estado[1:4]> with one-hot encoding.
+Optimizing FSM <id6binario/mux_i/estado/FSM> on signal <estado[1:4]> with one-hot encoding.
+Optimizing FSM <id7DHO/mux_i/estado/FSM> on signal <estado[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0001
+ 0001  | 0010
+ 0010  | 0100
+ 0011  | 1000
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <id8/señal/FSM> on signal <señal[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 00
+ 0001  | 01
+ 0010  | 11
+ 0011  | 10
+-------------------
+INFO:Xst:2261 - The FF/Latch <maximo_1> in Unit <id2> is equivalent to the following FF/Latch, which will be removed : <maximo_2> 
+INFO:Xst:2261 - The FF/Latch <num2_1> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito2_1> 
+INFO:Xst:2261 - The FF/Latch <num2_2> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito2_2> 
+INFO:Xst:2261 - The FF/Latch <num2_3> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito2_3> 
+INFO:Xst:2261 - The FF/Latch <num1_0> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito1_0> 
+INFO:Xst:2261 - The FF/Latch <num1_1> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito1_1> 
+INFO:Xst:2261 - The FF/Latch <num1_2> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito1_2> 
+INFO:Xst:2261 - The FF/Latch <num1_3> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito1_3> 
+INFO:Xst:2261 - The FF/Latch <num3_0> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito3_0> 
+INFO:Xst:2261 - The FF/Latch <num3_1> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito3_1> 
+INFO:Xst:2261 - The FF/Latch <num3_2> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito3_2> 
+INFO:Xst:2261 - The FF/Latch <num3_3> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito3_3> 
+INFO:Xst:2261 - The FF/Latch <num4_0> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito4_0> 
+INFO:Xst:2261 - The FF/Latch <num4_1> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito4_1> 
+INFO:Xst:2261 - The FF/Latch <num4_2> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito4_2> 
+INFO:Xst:2261 - The FF/Latch <num2_0> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito2_0> 
+INFO:Xst:2261 - The FF/Latch <num4_3> in Unit <id8> is equivalent to the following FF/Latch, which will be removed : <digito4_3> 
+WARNING:Xst:1710 - FF/Latch <maximo_0> (without init value) has a constant value of 1 in block <id2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <estado<3:2>> (without init value) have a constant value of 0 in block <up_down>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 3
+ 16x8-bit ROM                                          : 3
+# Adders/Subtractors                                   : 20
+ 4-bit adder                                           : 7
+ 4-bit addsub                                          : 6
+ 4-bit subtractor                                      : 7
+# Counters                                             : 4
+ 17-bit up counter                                     : 3
+ 25-bit up counter                                     : 1
+# Registers                                            : 218
+ Flip-Flops                                            : 218
+# Latches                                              : 3
+ 1-bit latch                                           : 3
+# Comparators                                          : 12
+ 4-bit comparator equal                                : 4
+ 4-bit comparator greater                              : 4
+ 4-bit comparator less                                 : 4
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <GLOBAL>: instances <sincronizador_reset1>, <sincronizador_reset2> of unit <sincronizador> are equivalent, second instance is removed
+WARNING:Xst:1710 - FF/Latch <maximo_0> (without init value) has a constant value of 1 in block <cuenta_DHO>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <maximo_1> in Unit <cuenta_DHO> is equivalent to the following FF/Latch, which will be removed : <maximo_2> 
+INFO:Xst:2261 - The FF/Latch <num2_1> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito2_1> 
+INFO:Xst:2261 - The FF/Latch <num2_2> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito2_2> 
+INFO:Xst:2261 - The FF/Latch <num2_3> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito2_3> 
+INFO:Xst:2261 - The FF/Latch <num1_0> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito1_0> 
+INFO:Xst:2261 - The FF/Latch <num1_1> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito1_1> 
+INFO:Xst:2261 - The FF/Latch <num1_2> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito1_2> 
+INFO:Xst:2261 - The FF/Latch <num1_3> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito1_3> 
+INFO:Xst:2261 - The FF/Latch <num3_0> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito3_0> 
+INFO:Xst:2261 - The FF/Latch <num3_1> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito3_1> 
+INFO:Xst:2261 - The FF/Latch <num3_2> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito3_2> 
+INFO:Xst:2261 - The FF/Latch <num3_3> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito3_3> 
+INFO:Xst:2261 - The FF/Latch <num4_0> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito4_0> 
+INFO:Xst:2261 - The FF/Latch <num4_1> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito4_1> 
+INFO:Xst:2261 - The FF/Latch <num4_2> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito4_2> 
+INFO:Xst:2261 - The FF/Latch <num2_0> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito2_0> 
+INFO:Xst:2261 - The FF/Latch <num4_3> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <digito4_3> 
+WARNING:Xst:2677 - Node <id3/Q_3> of sequential type is unconnected in block <GLOBAL>.
+WARNING:Xst:2677 - Node <id3/Q_2> of sequential type is unconnected in block <GLOBAL>.
+WARNING:Xst:2677 - Node <id3/Q_1> of sequential type is unconnected in block <GLOBAL>.
+WARNING:Xst:2677 - Node <id3/Q_0> of sequential type is unconnected in block <GLOBAL>.
+
+Optimizing unit <GLOBAL> ...
+
+Optimizing unit <up_down> ...
+INFO:Xst:2261 - The FF/Latch <señal_FSM_FFd1> in Unit <up_down> is equivalent to the following FF/Latch, which will be removed : <estado_1> 
+INFO:Xst:2261 - The FF/Latch <max2_1> in Unit <up_down> is equivalent to the following 2 FFs/Latches, which will be removed : <max1_1> <max1_2> 
+WARNING:Xst:2677 - Node <max2_1> of sequential type is unconnected in block <up_down>.
+WARNING:Xst:2677 - Node <max2_2> of sequential type is unconnected in block <up_down>.
+WARNING:Xst:2677 - Node <max2_3> of sequential type is unconnected in block <up_down>.
+WARNING:Xst:2677 - Node <max1_3> of sequential type is unconnected in block <up_down>.
+
+Optimizing unit <salida_display> ...
+
+Optimizing unit <multiplexor> ...
+WARNING:Xst:2677 - Node <id8/estado_0> of sequential type is unconnected in block <GLOBAL>.
+WARNING:Xst:1710 - FF/Latch <id9/Salida_0> (without init value) has a constant value of 1 in block <GLOBAL>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GLOBAL, actual ratio is 20.
+
+Final Macro Processing ...
+
+Processing Unit <GLOBAL> :
+	Found 2-bit shift register for signal <sincronizador_Select3_s/salida>.
+	Found 2-bit shift register for signal <sincronizador_Select2_s/salida>.
+	Found 2-bit shift register for signal <sincronizador_Select1_s/salida>.
+	Found 2-bit shift register for signal <sincronizador_but_down/salida>.
+	Found 2-bit shift register for signal <sincronizador_but_up_s/salida>.
+	Found 2-bit shift register for signal <sincronizador_cambio_s/salida>.
+	Found 2-bit shift register for signal <sincronizador_LAP_s/salida>.
+	Found 2-bit shift register for signal <sincronizador_ce_N_s/salida>.
+	Found 2-bit shift register for signal <sincronizador_load_N_s/salida>.
+	Found 2-bit shift register for signal <sincronizador_up/salida>.
+	Found 2-bit shift register for signal <sincronizador_reset1/salida>.
+Unit <GLOBAL> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 249
+ Flip-Flops                                            : 249
+# Shift Registers                                      : 11
+ 2-bit shift register                                  : 11
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GLOBAL.ngr
+Top Level Output File Name         : GLOBAL
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 27
+
+Cell Usage :
+# BELS                             : 906
+#      GND                         : 1
+#      INV                         : 24
+#      LUT1                        : 73
+#      LUT2                        : 118
+#      LUT2_D                      : 11
+#      LUT2_L                      : 4
+#      LUT3                        : 80
+#      LUT3_D                      : 6
+#      LUT3_L                      : 13
+#      LUT4                        : 286
+#      LUT4_D                      : 24
+#      LUT4_L                      : 43
+#      MUXCY                       : 94
+#      MUXF5                       : 48
+#      MUXF6                       : 4
+#      VCC                         : 1
+#      XORCY                       : 76
+# FlipFlops/Latches                : 263
+#      FD                          : 15
+#      FDC                         : 97
+#      FDCE                        : 126
+#      FDP                         : 15
+#      FDS                         : 7
+#      LD_1                        : 3
+# Shift Registers                  : 11
+#      SRL16                       : 11
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 11
+#      OBUF                        : 15
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                      371  out of   1920    19%  
+ Number of Slice Flip Flops:            263  out of   3840     6%  
+ Number of 4 input LUTs:                693  out of   3840    18%  
+    Number used as logic:               682
+    Number used as Shift registers:      11
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    173    15%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------+---------------------------------------+-------+
+Clock Signal                                            | Clock buffer(FF name)                 | Load  |
+--------------------------------------------------------+---------------------------------------+-------+
+id4/temporal1                                           | BUFG                                  | 122   |
+clk                                                     | BUFGP                                 | 113   |
+id10/seleccion3ant_not0001(id10/seleccion3ant_not0001:O)| NONE(*)(id10/seleccion3ant)           | 3     |
+id5crono/clk_i/temporal                                 | NONE(id5crono/mux_i/estado_FSM_FFd1)  | 12    |
+id6binario/clk_i/temporal                               | NONE(id6binario/mux_i/estado_FSM_FFd1)| 12    |
+id7DHO/clk_i/temporal                                   | NONE(id7DHO/mux_i/estado_FSM_FFd1)    | 12    |
+--------------------------------------------------------+---------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------------+------------------------+-------+
+Control Signal                                            | Buffer(FF name)        | Load  |
+----------------------------------------------------------+------------------------+-------+
+sincronizador_reset1/salida(sincronizador_reset1/salida:Q)| NONE(id4/contador_0)   | 134   |
+id1/Minuto0_or0000(id1/Minuto0_or0000:O)                  | NONE(id1/FINAL)        | 104   |
+----------------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.144ns (Maximum Frequency: 109.361MHz)
+   Minimum input arrival time before clock: 2.061ns
+   Maximum output required time after clock: 7.165ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'id4/temporal1'
+  Clock period: 9.144ns (frequency: 109.361MHz)
+  Total number of paths / destination ports: 4766 / 142
+-------------------------------------------------------------------------
+Delay:               9.144ns (Levels of Logic = 5)
+  Source:            id2/num1_3 (FF)
+  Destination:       id2/DIGITO2_1 (FF)
+  Source Clock:      id4/temporal1 rising
+  Destination Clock: id4/temporal1 rising
+
+  Data Path: id2/num1_3 to id2/DIGITO2_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.720   1.405  id2/num1_3 (id2/num1_3)
+     LUT4_D:I0->O         16   0.551   1.432  id2/fin_cmp_eq00071 (id2/fin_cmp_eq0007)
+     LUT2:I1->O            1   0.551   0.827  id2/num2_mux0004<1>2_SW0 (N60)
+     LUT4_D:I3->O          3   0.551   0.933  id2/num2_mux0004<1>2 (N23)
+     LUT4:I3->O            1   0.551   0.869  id2/num2_mux0004<1>66_SW1 (N247)
+     LUT4:I2->O            2   0.551   0.000  id2/num2_mux0004<1>72 (id2/num2_mux0004<1>)
+     FDCE:D                    0.203          id2/DIGITO2_1
+    ----------------------------------------
+    Total                      9.144ns (3.678ns logic, 5.466ns route)
+                                       (40.2% logic, 59.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.049ns (frequency: 141.864MHz)
+  Total number of paths / destination ports: 2400 / 113
+-------------------------------------------------------------------------
+Delay:               7.049ns (Levels of Logic = 26)
+  Source:            id4/contador_1 (FF)
+  Destination:       id4/contador_24 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: id4/contador_1 to id4/contador_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.720   1.216  id4/contador_1 (id4/contador_1)
+     LUT1:I0->O            1   0.551   0.000  id4/Mcount_contador_cy<1>_rt (id4/Mcount_contador_cy<1>_rt)
+     MUXCY:S->O            1   0.500   0.000  id4/Mcount_contador_cy<1> (id4/Mcount_contador_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<2> (id4/Mcount_contador_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<3> (id4/Mcount_contador_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<4> (id4/Mcount_contador_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<5> (id4/Mcount_contador_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<6> (id4/Mcount_contador_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<7> (id4/Mcount_contador_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<8> (id4/Mcount_contador_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<9> (id4/Mcount_contador_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<10> (id4/Mcount_contador_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<11> (id4/Mcount_contador_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<12> (id4/Mcount_contador_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<13> (id4/Mcount_contador_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<14> (id4/Mcount_contador_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<15> (id4/Mcount_contador_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<16> (id4/Mcount_contador_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<17> (id4/Mcount_contador_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<18> (id4/Mcount_contador_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<19> (id4/Mcount_contador_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<20> (id4/Mcount_contador_cy<20>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<21> (id4/Mcount_contador_cy<21>)
+     MUXCY:CI->O           1   0.064   0.000  id4/Mcount_contador_cy<22> (id4/Mcount_contador_cy<22>)
+     MUXCY:CI->O           0   0.064   0.000  id4/Mcount_contador_cy<23> (id4/Mcount_contador_cy<23>)
+     XORCY:CI->O           1   0.904   0.996  id4/Mcount_contador_xor<24> (Result<24>)
+     LUT2:I1->O            1   0.551   0.000  id4/Mcount_contador_eqn_241 (id4/Mcount_contador_eqn_24)
+     FDC:D                     0.203          id4/contador_24
+    ----------------------------------------
+    Total                      7.049ns (4.837ns logic, 2.212ns route)
+                                       (68.6% logic, 31.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'id5crono/clk_i/temporal'
+  Clock period: 5.251ns (frequency: 190.440MHz)
+  Total number of paths / destination ports: 28 / 12
+-------------------------------------------------------------------------
+Delay:               5.251ns (Levels of Logic = 3)
+  Source:            id5crono/mux_i/estado_FSM_FFd4 (FF)
+  Destination:       id5crono/mux_i/salida_2 (FF)
+  Source Clock:      id5crono/clk_i/temporal rising
+  Destination Clock: id5crono/clk_i/temporal rising
+
+  Data Path: id5crono/mux_i/estado_FSM_FFd4 to id5crono/mux_i/salida_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              7   0.720   1.405  id5crono/mux_i/estado_FSM_FFd4 (id5crono/mux_i/estado_FSM_FFd4)
+     LUT2_D:I0->O          3   0.551   0.975  id5crono/mux_i/salida_mux0001<3>12 (id5crono/mux_i/salida_mux0001<0>12)
+     LUT4_L:I2->LO         1   0.551   0.295  id5crono/mux_i/salida_mux0001<2>22 (id5crono/mux_i/salida_mux0001<2>22)
+     LUT2:I1->O            1   0.551   0.000  id5crono/mux_i/salida_mux0001<2>25 (id5crono/mux_i/salida_mux0001<2>)
+     FDP:D                     0.203          id5crono/mux_i/salida_2
+    ----------------------------------------
+    Total                      5.251ns (2.576ns logic, 2.675ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'id6binario/clk_i/temporal'
+  Clock period: 5.251ns (frequency: 190.440MHz)
+  Total number of paths / destination ports: 28 / 12
+-------------------------------------------------------------------------
+Delay:               5.251ns (Levels of Logic = 3)
+  Source:            id6binario/mux_i/estado_FSM_FFd4 (FF)
+  Destination:       id6binario/mux_i/salida_2 (FF)
+  Source Clock:      id6binario/clk_i/temporal rising
+  Destination Clock: id6binario/clk_i/temporal rising
+
+  Data Path: id6binario/mux_i/estado_FSM_FFd4 to id6binario/mux_i/salida_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              7   0.720   1.405  id6binario/mux_i/estado_FSM_FFd4 (id6binario/mux_i/estado_FSM_FFd4)
+     LUT2_D:I0->O          3   0.551   0.975  id6binario/mux_i/salida_mux0001<3>12 (id6binario/mux_i/salida_mux0001<0>12)
+     LUT4_L:I2->LO         1   0.551   0.295  id6binario/mux_i/salida_mux0001<2>22 (id6binario/mux_i/salida_mux0001<2>22)
+     LUT2:I1->O            1   0.551   0.000  id6binario/mux_i/salida_mux0001<2>25 (id6binario/mux_i/salida_mux0001<2>)
+     FDP:D                     0.203          id6binario/mux_i/salida_2
+    ----------------------------------------
+    Total                      5.251ns (2.576ns logic, 2.675ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'id7DHO/clk_i/temporal'
+  Clock period: 5.251ns (frequency: 190.440MHz)
+  Total number of paths / destination ports: 28 / 12
+-------------------------------------------------------------------------
+Delay:               5.251ns (Levels of Logic = 3)
+  Source:            id7DHO/mux_i/estado_FSM_FFd4 (FF)
+  Destination:       id7DHO/mux_i/salida_2 (FF)
+  Source Clock:      id7DHO/clk_i/temporal rising
+  Destination Clock: id7DHO/clk_i/temporal rising
+
+  Data Path: id7DHO/mux_i/estado_FSM_FFd4 to id7DHO/mux_i/salida_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              7   0.720   1.405  id7DHO/mux_i/estado_FSM_FFd4 (id7DHO/mux_i/estado_FSM_FFd4)
+     LUT2_D:I0->O          3   0.551   0.975  id7DHO/mux_i/salida_mux0001<3>12 (id7DHO/mux_i/salida_mux0001<0>12)
+     LUT4_L:I2->LO         1   0.551   0.295  id7DHO/mux_i/salida_mux0001<2>22 (id7DHO/mux_i/salida_mux0001<2>22)
+     LUT2:I1->O            1   0.551   0.000  id7DHO/mux_i/salida_mux0001<2>25 (id7DHO/mux_i/salida_mux0001<2>)
+     FDP:D                     0.203          id7DHO/mux_i/salida_2
+    ----------------------------------------
+    Total                      5.251ns (2.576ns logic, 2.675ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              2.061ns (Levels of Logic = 1)
+  Source:            Select1 (PAD)
+  Destination:       sincronizador_Select1_s/Mshreg_salida (FF)
+  Destination Clock: clk rising
+
+  Data Path: Select1 to sincronizador_Select1_s/Mshreg_salida
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   0.801  Select1_IBUF (Select1_IBUF)
+     SRL16:D                   0.439          sincronizador_Select1_s/Mshreg_salida
+    ----------------------------------------
+    Total                      2.061ns (1.260ns logic, 0.801ns route)
+                                       (61.1% logic, 38.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'id4/temporal1'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            id1/FINAL (FF)
+  Destination:       fin_crono (PAD)
+  Source Clock:      id4/temporal1 rising
+
+  Data Path: id1/FINAL to fin_crono
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.720   0.801  id1/FINAL (id1/FINAL)
+     OBUF:I->O                 5.644          fin_crono_OBUF (fin_crono)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            id9/Salida_7 (FF)
+  Destination:       salida<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: id9/Salida_7 to salida<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.720   0.801  id9/Salida_7 (id9/Salida_7)
+     OBUF:I->O                 5.644          salida_7_OBUF (salida<7>)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.53 secs
+ 
+--> 
+
+Total memory usage is 322432 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
+Number of infos    :   39 (   0 filtered)
+

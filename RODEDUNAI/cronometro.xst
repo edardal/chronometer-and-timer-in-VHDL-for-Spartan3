@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Usuario/Desktop/RODEDUNAI/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Usuario/Desktop/RODEDUNAI/xst"
+elaborate
+-ifn cronometro.prj
+-ifmt mixed

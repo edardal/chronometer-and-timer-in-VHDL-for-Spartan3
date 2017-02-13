@@ -1,0 +1,2 @@
+vhdl isim_temp "cronometro.vhd"
+vhdl isim_temp "cronometro_tb.vhd"

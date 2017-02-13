@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/xst"
+elaborate
+-ifn cuenta_bin.prj
+-ifmt mixed

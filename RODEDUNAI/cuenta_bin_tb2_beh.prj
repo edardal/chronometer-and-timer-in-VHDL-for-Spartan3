@@ -1,0 +1,2 @@
+vhdl work "cuenta_bin.vhd"
+vhdl work "cuenta_bin_tb2.vhd"

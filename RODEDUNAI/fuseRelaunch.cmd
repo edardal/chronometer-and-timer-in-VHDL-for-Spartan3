@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/cuenta_DHO_tb_isim_beh.exe" -prj "C:/Users/Usuario/Desktop/RODEDUNAI_copia_PRUEBAS/RODEDUNAI/cuenta_DHO_tb_beh.prj" "work.cuenta_DHO_tb" 
